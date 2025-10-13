@@ -22,7 +22,7 @@
   Holder brættet godt og fladt \
   Når du krydser Kattegat \
   Ung og frisk og sporty \
-  Selvom du er fourty
+  Selvom du er forty
 
 + Serve-esser det er dit \
   Ypperste speciale \
