@@ -1,0 +1,7 @@
+services:
+    typst:
+        # https://github.com/typst/typst?tab=readme-ov-file#installation
+        image: ghcr.io/typst/typst:latest
+        working_dir: /app
+        volumes:
+            - ../:/app

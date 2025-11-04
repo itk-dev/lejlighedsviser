@@ -1,0 +1,47 @@
+#!/usr/bin/env sh
+set -o errexit -o noclobber -o nounset
+IFS=$(printf '\n\t')
+
+script_dir=$(cd "$(dirname "$0}")" && pwd)
+project_dir=$(cd "$(dirname "$script_dir")" && pwd)
+
+cd "$project_dir"
+
+typ_filename="sangbog.typ_"
+
+# Find Typst files in sub-folders and sort by creation time.
+# https://unix.stackexchange.com/a/20613
+files=$(find . -mindepth 2 -name '*.typ' -print0 | xargs -0 ls -rt)
+
+cat >| $typ_filename <<'EOF'
+#set document(
+  title: [ITK Devs sangbog],
+  keywords: ("lejlighedsvise")
+)
+
+#set page(numbering: "1")
+
+#set text(lang: "da")
+
+#title()
+
+#pagebreak()
+
+#outline()
+
+#pagebreak(to: "odd")
+EOF
+
+for f in $files; do
+    cat >> $typ_filename <<EOF
+#pagebreak(weak: true)
+#include "$f"
+
+EOF
+done
+
+cat $typ_filename
+
+typst compile "$typ_filename" "ITK-Dev-sangbog.pdf"
+
+rm "$typ_filename"
