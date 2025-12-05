@@ -35,7 +35,7 @@
    Ja, det er! \
    Hvem vil ud og spise? \
    Bøfsandwich det er et hit \
-   den kan alle spise. \
+   den kan alle prise. \
    Ingen vegetar vi har, \
    blot et Consul suk vi tar' \
    Dev team længe leve \
