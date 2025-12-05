@@ -39,4 +39,4 @@
    Ingen vegetar vi har, \
    blot et Consul suk vi tar' \
    Dev team længe leve \
-   glasset må vi hæve
+   glasset må vi hæve!
