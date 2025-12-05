@@ -17,7 +17,7 @@
    Letbanen den driller. \
    Lars og Ture har det trangt; \
    barnevogne triller. \
-   Jesper K ta'r latter med \
+   Jesper K ta'r latte med \
    Martin han får aldrig fred \
    Finn 3D printer styrer \
    ret han COVID fyrer
